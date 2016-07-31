@@ -14,7 +14,7 @@ import {
 import {provideFakeRouter} from '../testing/router/router-testing-providers';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './+home/home.component';
+import { NewsComponent } from './+news/news.component';
 import { AboutComponent } from './+about/about.component';
 
 export function main() {
@@ -28,7 +28,7 @@ export function main() {
 
       // Support for testing component that uses Router
       let config:RouterConfig = [
-        {path: '', component: HomeComponent},
+        {path: '', component: NewsComponent},
         {path: 'about', component: AboutComponent}
       ];
 

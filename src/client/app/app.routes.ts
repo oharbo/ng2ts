@@ -1,10 +1,15 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 
 import { AboutRoutes } from './+about/index';
-import { HomeRoutes } from './+home/index';
+import { NewsRoutes } from './+news/index';
 
 const routes: RouterConfig = [
-  ...HomeRoutes,
+  {
+    path: '',
+    redirectTo: '/news',
+    pathMatch: 'full'
+  },
+  ...NewsRoutes,
   ...AboutRoutes
 ];
 

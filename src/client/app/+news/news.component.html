@@ -1,0 +1,28 @@
+<h2>
+    Angular 2 news viewer
+</h2>
+
+<div *ngIf="item" class="single-new__wrp">
+    <div class="single-new__view">
+        <img [src]="item.image" alt="{{item.title}}">
+
+        <div class="single-new__content">
+            <div>
+                <h3>{{item.title}}</h3>
+                <p>{{item.body}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="news-switcher">
+        <div>
+            <div *ngIf="id > 0" class="prev" (click)="prev()">prev</div>
+        </div>
+        <div>
+            <div *ngIf="showNext" class="next" (click)="next()">next</div>
+        </div>
+    </div>
+</div>
+
+<app-spinner [spin]="spinner"></app-spinner>
+
+
