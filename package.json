@@ -1,9 +1,9 @@
 {
-  "name": "angular2-seed",
-  "version": "0.0.0",
-  "description": "Modular seed project for Angular 2 apps with fast, statically typed build",
+  "name": "ng2ts",
+  "version": "0.0.1",
+  "description": "Modular news viewer project for Angular 2 app",
   "repository": {
-    "url": "https://github.com/mgechev/angular2-seed"
+    "url": "https://github.com/garbo-a/ng2ts.git"
   },
   "scripts": {
     "build.dev": "gulp build.dev --color",
