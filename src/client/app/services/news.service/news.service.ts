@@ -18,7 +18,7 @@ export class NewsService {
                 }
                 window.localStorage.setItem('news', JSON.stringify(NEWS));
                 resolve(NEWS)
-            }, 3500) // 3 sec
+            }, 3500) // 3.5 sec
         );
     };
 }
